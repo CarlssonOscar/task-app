@@ -1,8 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Task
+from .forms import TaskForm
+from django.views.decorators.http import require_POST
 
 
 def main(request):
+    # Enable adding tasks to task list.
     the_tasks = Task.objects.order_by('id')
-    context = {'the_tasks' : the_tasks}
+    form = TaskForm()
+    context = {'the_tasks' : the_tasks, 'form' : form}
     return render(request, 'index.html', context)
+
+
+@require_POST
+def addTask(request):
+    form = TaskForm(request.POST)
+    if form.is_valid():
+        new_task = Task(text=request.POST['task_input'])
+        new_task.save()
+
+    return redirect('main')

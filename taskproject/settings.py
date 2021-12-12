@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['task-app007.herokuapp.com', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://8000-apricot-penguin-zisxfwem.ws-eu21.gitpod.io']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-apricot-penguin-zisxfwem.ws-eu21.gitpod.io']
 
 
 # Application definition

@@ -39,7 +39,7 @@ def deleteFinished(request):
     return redirect('main')
 
 
-def delete(request):
+def clear(request):
 
     Task.objects.all().delete()
 

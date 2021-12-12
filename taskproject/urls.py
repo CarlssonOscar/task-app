@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('taskapp.urls'), name='taskapp-urls'),
+    path('accounts/', include('allauth.urls')),
 ]

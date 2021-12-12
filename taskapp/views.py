@@ -38,3 +38,10 @@ def deleteFinished(request):
 
     return redirect('main')
 
+
+def delete(request):
+
+    Task.objects.all().delete()
+
+    return redirect('main')
+

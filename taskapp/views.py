@@ -14,6 +14,7 @@ def main(request):
 
 @require_POST
 def addTask(request):
+
     form = TaskForm(request.POST)
     if form.is_valid():
         new_task = Task(text=request.POST['task_input'])
@@ -23,8 +24,17 @@ def addTask(request):
 
 
 def finishedTask(request, task_id):
+
     task = Task.objects.get(primary_key=task_id)
     task.complete = True
     task.save()
 
     return redirect('main')
+
+
+def deleteFinished(request):
+
+    Task.objects.filter(complete__exact=True).delete()
+
+    return redirect('main')
+

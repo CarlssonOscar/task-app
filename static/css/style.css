@@ -1,5 +1,5 @@
 html, body {
-    background-color: rgb(247, 239, 239);
+    background-color: rgb(245, 245, 245);
     color: black;
     font-family: "Quattrocento", helvetica, sans-serif;
 } 
@@ -12,4 +12,14 @@ html, body {
 
 .navigation a:hover {
     opacity: 0.5;
+}
+
+.taskstyle {
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.taskstrong {
+    font-weight: bold;
+    font-size: 1.3em;
 }

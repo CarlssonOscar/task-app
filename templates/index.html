@@ -2,5 +2,47 @@
 
 {% block content %}
 
+<div class="container-fluid" id="wrapper">
+			
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col-lg-4 col-lg-offset-4" id="content">
+            <h2>Tasks at hand</h2>
+            
+            <form action="#" method="POST" role="form">
+            {% csrf_token %}
+                <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Add tasks" aria-label="Todo" aria-describedby="add-btn"
+                         autofocus>
+                      <span class="input-group-btn">
+                          <button type="submit" class="btn btn-default taskstyle taskstrong ml-2" id="add-btn">Add</button>
+                      </span>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col">
+                    <div class="btn-toolbar">
+                        <div class="btn-group mr-1">
+                            <button type="button" class="btn taskstyle taskstrong">
+                                <i></i> Delete Finished
+                            </button>
+                        </div>
+                        <div class="btn-group mr-1">
+                            <button type="button" class="btn taskstyle taskstrong">
+                                <i></i> Clear All
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item m-1 taskstyle">Do dishes</li>
+                <li class="list-group-item m-1 taskstyle">Workout</li>
+            </ul>
+        </div>
+    </div>
 
 {%endblock%}

@@ -1,32 +1,5 @@
 body {
-    background-color: rgb(rgb(236, 234, 234));
+    
 }
 
-.navcontainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
 
-.navbar {
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
-}
-
-.nav-link {
-    font-size: 28px;
-    color: black;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    display: inline-block;
-    margin-left: 20px;
-}

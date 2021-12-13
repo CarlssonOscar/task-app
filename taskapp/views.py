@@ -45,3 +45,4 @@ def clear(request):
 
     return redirect('main')
 
+

@@ -1,5 +1,15 @@
-body {
-    
+html, body {
+    background-color: rgb(247, 239, 239);
+    color: black;
+    font-family: "Quattrocento", helvetica, sans-serif;
+} 
+
+.navigation a{
+    color: black;
+    list-style: none;
+    font-size: 25px;
 }
 
-
+.navigation a:hover {
+    opacity: 0.5;
+}

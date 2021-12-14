@@ -4,5 +4,6 @@ from django import forms
 class TaskForm(forms.Form):
     # Add task text
     task_input = forms.CharField(max_length=45, widget=forms.TextInput(
-        attrs={}))
+        attrs={'class' : 'form-control', 'placeholder' : 
+        'Add tasks', 'aria-label' : 'Task', 'aria-describedby' : 'add-btn'}))
     # add attributes when html is done

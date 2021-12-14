@@ -18,7 +18,7 @@ def addTask(request):
 
     form = TaskForm(request.POST)
     if form.is_valid():
-        new_task = Task(text=request.POST['task_input'])
+        new_task = Task(tasks=request.POST['task_input'])
         new_task.save()
 
     return redirect('main')

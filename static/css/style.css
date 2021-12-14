@@ -28,3 +28,7 @@ html, body {
 .task-finished {
     opacity: 0.4;
 }
+
+.inline {
+    display: flex;
+}

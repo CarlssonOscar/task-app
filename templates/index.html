@@ -39,8 +39,9 @@
             </div>
 
             <ul class="list-group">
-                <li class="list-group-item m-1 taskstyle">Do dishes</li>
-                <li class="list-group-item m-1 taskstyle">Workout</li>
+                {% for task in the_tasks %}
+                <li class="list-group-item m-1 taskstyle">{{ task.tasks }}</li>
+                {% endfor %}
             </ul>
         </div>
     </div>

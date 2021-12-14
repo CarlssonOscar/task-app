@@ -16,6 +16,7 @@ html, body {
 
 .taskstyle {
     border: none;
+    color: black;
     background-color: rgb(245, 245, 245);
 }
 

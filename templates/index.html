@@ -3,20 +3,21 @@
 {% block content %}
 
 <div class="container-fluid" id="wrapper">
-			
+
     <div class="row d-flex justify-content-center mt-5">
         <div class="col-lg-4 col-lg-offset-4" id="content">
             <h2>Tasks at hand</h2>
-            
+
             <form action="#" method="POST" role="form">
-            {% csrf_token %}
+                {% csrf_token %}
                 <div class="form-group">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Add tasks" aria-label="Todo" aria-describedby="add-btn"
-                         autofocus>
-                      <span class="input-group-btn">
-                          <button type="submit" class="btn btn-default taskstyle taskstrong ml-2" id="add-btn">Add</button>
-                      </span>
+                        <input type="text" class="form-control" placeholder="Add tasks" aria-label="Todo"
+                            aria-describedby="add-btn" autofocus>
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default taskstyle taskstrong ml-2"
+                                id="add-btn">Add</button>
+                        </span>
                     </div>
                 </div>
             </form>
@@ -40,10 +41,14 @@
 
             <ul class="list-group">
                 {% for task in the_tasks %}
-                <li class="list-group-item m-1 taskstyle">{{ task.tasks }}</li>
+                    {% if task.finished %}
+                    <li class="list-group-item m-1 taskstyle task-finished">{{ task.tasks }}</li>
+                    {% else %}
+                    <a href="#"><li class="list-group-item m-1 taskstyle">{{ task.tasks }}</li></a>
+                    {% endif %}                     
                 {% endfor %}
             </ul>
         </div>
     </div>
 
-{%endblock%}
+    {%endblock%}

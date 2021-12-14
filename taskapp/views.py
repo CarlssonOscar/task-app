@@ -8,7 +8,7 @@ def main(request):
     # Enable adding tasks to task list.
     the_tasks = Task.objects.order_by('id')
     form = TaskForm()
-    context = {'the_tasks' : the_tasks, 'form': form}
+    context = {'the_tasks' : the_tasks, 'form': form }
 
     return render(request, 'index.html', context)
 
@@ -26,7 +26,7 @@ def addTask(request):
 
 def finishedTask(request, task_id):
 
-    task = Task.objects.get(primary_key=task_id)
+    task = Task.objects.get(pk=task_id)
     task.complete = True
     task.save()
 

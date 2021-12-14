@@ -24,3 +24,7 @@ html, body {
     font-weight: bold;
     font-size: 1.3em;
 }
+
+.task-finished {
+    opacity: 0.4;
+}

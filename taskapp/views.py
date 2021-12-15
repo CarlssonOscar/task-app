@@ -8,7 +8,7 @@ from django.views.decorators.http import require_POST
 @login_required
 def main(request):
     # Enable adding tasks to task list.
-    the_tasks = Task.objects.filter(user=request.user).order_by('id')
+    the_tasks = Task.objects.filter(user=request.user.id).order_by('id')
     form = TaskForm()
     context = {'the_tasks': the_tasks, 'form': form}
 
@@ -17,10 +17,11 @@ def main(request):
 
 @require_POST
 def addTask(request):
-
+    
     form = TaskForm(request.POST)
     if form.is_valid():
-        new_task = Task(tasks=request.POST['task_input'])
+        new_task = form.save(commit=False)
+        new_task.user = request.user
         new_task.save()
 
     return redirect('main')

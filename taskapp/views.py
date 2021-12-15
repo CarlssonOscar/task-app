@@ -1,12 +1,14 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 from .models import Task
 from .forms import TaskForm
 from django.views.decorators.http import require_POST
 
 
+@login_required
 def main(request):
     # Enable adding tasks to task list.
-    the_tasks = Task.objects.order_by('id')
+    the_tasks = Task.objects.filter(user=request.user).order_by('id')
     form = TaskForm()
     context = {'the_tasks': the_tasks, 'form': form}
 

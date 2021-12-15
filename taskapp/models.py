@@ -1,7 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Task(models.Model):
+    user = models.ForeignKey(User, null=True, on_delete=models.CASCADE,)
     tasks = models.CharField(max_length=45)
     #Add date
     finished = models.BooleanField(default=False)

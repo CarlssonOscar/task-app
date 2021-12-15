@@ -14,15 +14,14 @@ def main(request):
 
     return render(request, 'index.html', context)
 
-
 @require_POST
 def addTask(request):
     
     form = TaskForm(request.POST)
     if form.is_valid():
-        new_task = form.save(commit=False)
-        new_task.user = request.user
-        new_task.save()
+        task = form.save(commit=False)
+        task.user = request.user
+        task.save()
 
     return redirect('main')
 

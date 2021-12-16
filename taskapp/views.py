@@ -17,11 +17,11 @@ def main(request):
 @require_POST
 def addTask(request):
     
-    form = TaskForm(request.POST)
+    form = TaskForm(data=request.POST)
     if form.is_valid():
-        task = form.save(commit=False)
-        task.user = request.user
-        task.save()
+        new_task = form.save(commit=False)
+        new_task.user = request.user
+        new_task.save()
 
     return redirect('main')
 

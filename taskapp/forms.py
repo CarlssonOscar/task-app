@@ -1,10 +1,13 @@
 from django import forms
+from .models import Task
 
 
 class TaskForm(forms.ModelForm):
-    # Add task text
+    
     class Meta:
-        task_input = forms.CharField(max_length=45, widget=forms.TextInput(
-            attrs={'class' : 'form-control', 'placeholder' : 
-            'Add tasks', 'aria-label' : 'Task', 'aria-describedby' : 'add-btn'}))
-    # add attributes when html is done
+        model = Task
+        fields = ['tasks']
+        
+    def __init__(self, *args, **kwargs): 
+        super(TaskForm, self).__init__(*args, **kwargs) 
+        self.fields['tasks'].label = False

@@ -11,3 +11,4 @@ class TaskForm(forms.ModelForm):
     def __init__(self, *args, **kwargs): 
         super(TaskForm, self).__init__(*args, **kwargs) 
         self.fields['tasks'].label = False
+        self.fields['tasks'].widget.attrs['placeholder'] = 'Add a task'

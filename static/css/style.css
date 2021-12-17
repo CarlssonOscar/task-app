@@ -39,3 +39,6 @@ html, body {
     max-width: 430px;
 }
  
+#id_tasks {
+    background-color: rgb(245, 245, 245);
+}

@@ -15,6 +15,7 @@ def main(request):
     return render(request, 'index.html', context)
 
 
+''' '''
 @require_POST
 def add_task(request):
 
@@ -27,6 +28,7 @@ def add_task(request):
     return redirect('main')
 
 
+''' '''
 def finished_task(request, task_id):
 
     task = Task.objects.get(pk=task_id)
@@ -36,6 +38,7 @@ def finished_task(request, task_id):
     return redirect('main')
 
 
+''' '''
 def delete_finished(request):
 
     Task.objects.filter(finished__exact=True).delete()
@@ -43,6 +46,7 @@ def delete_finished(request):
     return redirect('main')
 
 
+''' '''
 def clear(request):
 
     Task.objects.all().delete()

@@ -2,7 +2,7 @@
 
 Task App enables users to add tasks, mark tasks as finsihed, remove finished tasks and clear all list items.  
 
-[Link to site](https://www..com/)
+[Link to site](task-app007.herokuapp.com)
 
  ***  
 
@@ -39,9 +39,25 @@ As a user I want:
 
 # Features
 
+* Users can create an account.
+* App works on all tested devices.
+* App is responive.
+* Users has their own list.
+* Users can add tasks.
+* Users can mark tasks as finished.
+* Users can remove finished tasks from the list.
+* Users can remov of all tasks from the list.
+
+
 # Future Features
 
+* Enable users to have mulitple lists.
+* Enable users to get notifications abouts task deadlines.
+* Enable users to share lists with other users.
+
 # Testing
+
+[here](test.md)
 
 # Deployment 
 

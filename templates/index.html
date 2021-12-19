@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<div class="container-fluid" id="wrapper">
+<div class="container-fluid">
 
     <div class="row d-flex justify-content-center mt-5">
         <div class="col-lg-4 col-lg-offset-4">
             <h2>Tasks at hand</h2>
 
-            <form action="{% url 'addtask' %}" method="POST" role="form">
+            <form action="{% url 'addtask' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
                     <div class="form-group inline">
@@ -24,29 +24,28 @@
                 <div class="col">
                     <div class="btn-toolbar">
                         <div class="btn-group mr-1">
-                            <a href="{% url 'deletefinished' %}"><button type="button" class="btn taskstyle taskstrong">Clear Finished
-                            </button></a>
+                            <a href="{% url 'deletefinished' %}" class="btn taskstyle taskstrong" role="button">Clear Finished</a>
                         </div>
                         <div class="btn-group mr-1">
-                            <a href="{% url 'clear'%}"><button type="button" class="btn taskstyle taskstrong">Clear All
-                            </button></a>
+                            <a href="{% url 'clear'%}" class="btn taskstyle taskstrong" role="button">Clear All</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <ul class="list-group">
+            <!-- Rewritten due to a tag not accepted by W3C in list, originally ul, -->
+            <section class="list-group">
                 {% for task in the_tasks %}
                 {% if task.finished %}
-                <li class="list-group-item m-1 taskstyle task-finished">{{ task.tasks }}</li>
+                <div class="list-group-item m-1 taskstyle task-finished">{{ task.tasks }}</div>
                 {% else %}
                 <a href="{% url 'finished' task.id %}">
-                <li class="list-group-item m-1 taskstyle">{{ task.tasks }}</li>
+                    <div class="list-group-item m-1 taskstyle">{{ task.tasks }}</div>
                 </a>
                 {% endif %}
                 {% endfor %}
-            </ul>
+            </section>
         </div>
     </div>
+</div>
 
     {%endblock%}

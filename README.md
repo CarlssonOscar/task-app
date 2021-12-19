@@ -46,7 +46,8 @@ As a user I want:
 * Users can add tasks.
 * Users can mark tasks as finished.
 * Users can remove finished tasks from the list.
-* Users can remov of all tasks from the list.
+* Users can remove of all tasks from the list.
+* Instructions for how the app works.
 
 
 # Future Features

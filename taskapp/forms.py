@@ -11,7 +11,8 @@ class TaskForm(forms.ModelForm):
             'tasks': forms.TextInput(attrs={'size': '37'}),
         }
 
-    def __init__(self, *args, **kwargs): 
+    def __init__(self, *args, **kwargs):
         super(TaskForm, self).__init__(*args, **kwargs)
         self.fields['tasks'].label = False
-        self.fields['tasks'].widget.attrs['placeholder'] = 'Add a task, date, etc.'
+        self.fields['tasks'].widget.attrs[
+            'placeholder'] = 'Add a task, date, etc.'

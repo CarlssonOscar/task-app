@@ -24,7 +24,7 @@ All errors surround the implementation of Django in the HTML are not considered 
 
 # PEP8
 
-All django code went through a [PEP8 online test](http://pep8online.com/). All issues mostly concerning unnecessary spacing in empty files, to long lines of code and faulty spacing between functions were fixed. Non PEP8 compliant code which was automaticly generated in the settings.py file when setting up the project was for the most part ignored.
+All django code went through a [PEP8 online test](http://pep8online.com/). All issues mostly concerning unnecessary spacing in empty files, to long lines of code and faulty spacing between functions were fixed. Non PEP8 compliant code which was automaticly generated in the settings.py file when setting up the project was for the most part ignored except for a few to long lines.
 
 # Manual Testing
 

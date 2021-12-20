@@ -37,3 +37,16 @@ All django code went through a [PEP8 online test](http://pep8online.com/). All i
 * Mark task a finsihed - Without issues.
 * Clear finished, button - Without issues.
 * Clear all, button - Without issues.
+
+# Device testing
+
+Phone:
+
+* Samsung A52 - Without issues.
+* Iphone 7 - Without issues.
+
+Laptop:
+
+* Mac Book Pro, Chrome - Without issues.
+* Mac Book Pro, Firefox - Without issues.
+* Mac Book Pro, Brave - Without issues.

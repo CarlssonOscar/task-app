@@ -1,6 +1,8 @@
 # Introduction
 
-Task App enables users to add tasks, mark tasks as finsihed, remove finished tasks and clear all list items.  
+Task App is an app that gives users the possibility to create their own task list. The app enables users to add tasks, mark tasks as finsihed, remove finished tasks and clear all list items.  
+![](images/frontpage.jpg)
+
 
 [Link to site](task-app007.herokuapp.com)
 
@@ -80,6 +82,9 @@ As a user I want:
 
 # Testing
 
+It's possible to create a user, otherwise a user is provided below:
+User: testuser1 Pass: passowl1
+
 The testing can be found [here](test.md).
 
 # Deployment 
@@ -103,8 +108,14 @@ Under the deploy tab.
 
 # Acknowledgements
 
-* Stack overflow - provided excellent information on different topics.
-* 
+## Tutorials
+
+The bootstrap lessons and the "I Think Thefore I blog" lessons in the course material provided excellent help. A tutorial on a todo app on youtube also was of great help [Tutorial.](https://www.youtube.com/watch?v=phHM6glUURw&t=9s)
+
+## Valuable information
+* [Stack Overflow](https://stackoverflow.com/)
+* [W3Schools](https://www.w3schools.com)
+* Code Institutes learning material.
 
 I want to thank:
 * My mentor Tim Nelson for providing excellent guidance.

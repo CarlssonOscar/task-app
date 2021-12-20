@@ -19,12 +19,22 @@ All errors surround the implementation of Django in the HTML are not considered 
 ![](images/basic-W3C.jpg)
 
 # CSS
-[W33 Validation](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to check the code, no errors were found.
+[W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to check the code, no errors were found.
 
 
 # PEP8
 
-All django code went through a [PEP8 online test](http://pep8online.com/). All issues mostly concerning unnecessary spacing in empty files, to long lines of code and faulty spacing between functions were fixed. Non PEP8 compliant code which was automaticly generated in the settings.py file when setting up the project was for the most part ignored except for a few to long lines.
+All django code went through a [PEP8 online test](http://pep8online.com/). All issues concerned unnecessary spacing in empty files, to long lines of code and faulty spacing between functions. All were fixed. Non PEP8 compliant code which was automaticly generated in the settings.py file when setting up the project was for the most part ignored except for a few to long lines of code.
 
 # Manual Testing
+
+* Signing up a new user - Without issues.
+* Sign in - Without issues.
+* Sign out - Without issus.
+* Navbar changes depending if user is logged in or not - Without issues.
+* Add task input field - Without issues.
+* Add task button - Without issues.
+* Mark task a finsihed - Without issues.
+* Clear finsished, task button - Without issues.
+* Clear all, button - Without issues.
 

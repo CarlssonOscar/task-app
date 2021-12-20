@@ -50,3 +50,7 @@ Laptop:
 * Mac Book Pro, Chrome - Without issues.
 * Mac Book Pro, Firefox - Without issues.
 * Mac Book Pro, Brave - Without issues.
+
+Tablet: 
+
+* Ipad A2270, Chrome - Without issues.

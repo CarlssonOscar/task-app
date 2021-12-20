@@ -8,7 +8,7 @@ class TaskForm(forms.ModelForm):
         model = Task
         fields = ['tasks']
         widgets = {
-            'tasks': forms.TextInput(attrs={'size': '37'}),
+            'tasks': forms.TextInput(attrs={'size': '30'}),
         }
 
     def __init__(self, *args, **kwargs):

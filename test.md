@@ -14,7 +14,7 @@ Since the author could not find another way of implementing the a-tag in the lis
 
 ## basic.html
 
-All errors surround the implementation of Django in the HTML are not considered a concern since they mimic the code along project during the module.
+All errors surrounding the implementation of Django in the HTML are not considered a concern since they mimic the code along project during the module.
 
 ![](images/basic-W3C.jpg)
 
@@ -24,7 +24,7 @@ All errors surround the implementation of Django in the HTML are not considered 
 
 # PEP8
 
-All django code went through a [PEP8 online test](http://pep8online.com/). All issues concerned unnecessary spacing in empty files, to long lines of code and faulty spacing between functions. All were fixed. Non PEP8 compliant code which was automaticly generated in the settings.py file when setting up the project was for the most part ignored except for a few to long lines of code.
+All django code went through a [PEP8 online test](http://pep8online.com/). All issues concerned unnecessary spacing in empty files, to long lines of code and faulty spacing between functions. All were fixed. Non PEP8 compliant code which was automaticly generated in the settings.py when setting up the project and allauth template files was for the most part ignored except for a few to long lines of code.
 
 # Manual Testing
 

@@ -49,12 +49,12 @@ The goal is to create an app that enables users to create and continuesly adapt 
 As a user I want:
 
 * To be able to use the app on all devices.
-* The app to be responive on all devices.
+* The app to be responsive on all devices.
 * To create an account.
-* To have clear intructions for how to use the app.
+* To have clear instructions for how to use the app.
 * To have a user specific task list.
 * To be able to add tasks to the list.
-* To be able to mark tasks as finsihed.
+* To be able to mark tasks as finished.
 * To be able to remove finished tasks from the list.
 * To be able to remove all tasks from the list.
 

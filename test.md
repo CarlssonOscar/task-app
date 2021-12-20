@@ -38,7 +38,7 @@ All django code went through a [PEP8 online test](http://pep8online.com/). All i
 * Clear finished, button - Without issues.
 * Clear all, button - Without issues.
 
-# Device testing
+# Device Testing
 
 Phone:
 

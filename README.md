@@ -1,6 +1,7 @@
 # Introduction
 
 Task App is an app that gives users the possibility to create their own task list. The app enables users to add tasks, mark tasks as finsihed, remove finished tasks and clear all list items.  
+
 ![](images/frontpage.jpg)
 
 
@@ -10,8 +11,9 @@ Task App is an app that gives users the possibility to create their own task lis
 
  ## Index – Table of Contents   
 
+* [Wireframes](#Wireframes)  
 
-* [User Stories](#User-Experience)  
+* [UX](#User-Experience)  
 
 * [Features](#Features)  
 
@@ -25,7 +27,24 @@ Task App is an app that gives users the possibility to create their own task lis
 
 ***  
 
-# User Stories
+# Wireframes
+
+Computer: 
+
+![](images/balsamiq.jpg)
+
+Phone
+
+![](images/balsamiq-phone.jpg)
+
+
+# UX
+
+## Goal
+
+The goal is to create an app that enables users to create and continuesly adapt their own task list.
+
+## User stories
 
 As a user I want:
 
@@ -60,17 +79,20 @@ As a user I want:
 # Technologys
 
 ## Languages
+
 * HTML
 * CSS 
 * JavaScript
 * Python
 
 ## Libraries
+
 * Bootstrap 
 * Django 
 * Google Fonts
 
 ## Tools:
+
 * Heroku - for deployment.
 * Github - hosts the repository.
 * Cloudinary - storage of static files. 
@@ -88,6 +110,40 @@ User: testuser1 Pass: passowl1
 The testing can be found [here](test.md).
 
 # Deployment 
+
+## Create Project
+
+* The project respository was create using Code Institutes Gitpod Full [Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+## Insalling Modules
+
+Terminal:
+
+pip3 install:
+* django gunicorn
+* dj_database_url psycopg2
+* dj3-cloudinary-storage
+
+After a requirements file was created.
+* pip3 freeze --local > requirements.txt
+
+## Cerating Project and App
+
+Create Project
+* django-admin startproject project-name
+python3 manage.py starapp app-name
+
+settings.py:
+
+Add the created app to the installed apps sections.
+
+After this the changes in the repository can be migrated in the terminal:
+
+python3 manage.py migrate
+
+Then one can check if everything was done correctly through running the server.
+
+python3 manage.py runserver
 
 ## Heroku
 
@@ -120,5 +176,3 @@ The bootstrap lessons and the "I Think Thefore I blog" lessons in the course mat
 I want to thank:
 * My mentor Tim Nelson for providing excellent guidance.
 * Code Insitutes patient tutors.
-
-

@@ -35,6 +35,5 @@ All django code went through a [PEP8 online test](http://pep8online.com/). All i
 * Add task input field - Without issues.
 * Add task button - Without issues.
 * Mark task a finsihed - Without issues.
-* Clear finsished, task button - Without issues.
+* Clear finished, button - Without issues.
 * Clear all, button - Without issues.
-
